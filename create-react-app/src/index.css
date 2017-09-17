@@ -1,0 +1,128 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.panel-body {
+	text-align: left;
+	padding-bottom: 10px;
+}
+#submitter {
+	background-color: lightyellow;
+	font-weight: bold;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+}
+
+.appTitle {
+	margin-top: 14px;
+	font-family: serif;
+	font: times;
+	font-weight: bold;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+}
+
+#log {
+	height: 35px;
+	width: 35px;
+	text-align: center;
+	background-color: hotpink;
+	float: right;
+	padding-left: 5px;
+	display: inline;
+}
+
+#resultWell {
+	margin-top: 15px;
+	text-align: left;
+	margin-left: 4px;
+}
+
+ul {
+	list-style: none;
+}
+
+#search {
+	margin-top: 14px;
+	border-color: grey;
+	border-style: solid;
+	border-width: 4px;
+	background-color: white;
+}
+
+/*#sidebar {
+	margin-top: 14px;
+	border-color: grey;
+	border-style: solid;
+	border-width: 4px;
+	margin-left: 2%;
+	margin-right: 0px;
+
+}*/
+
+#formArea {
+	margin-left: 0px;
+}
+
+#form {
+	margin-top: 14px;
+	border-color: grey;
+	border-style: solid;
+	border-width: 4px;
+	margin-right: 0px;
+	background-color: white;
+}
+
+#contains {
+	display: inline;
+	float: left;
+}
+
+#results {
+	margin: -134px 0 0 14px;
+	border-color: grey;
+	border-style: solid;
+	border-width: 4px;
+	background-color: white;
+}
+
+h3 {
+	color: plum;
+	font-weight: bold;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+}
+
+#resultDiv {
+	border-color: grey;
+	border-style: solid;
+	border-width: 4px;
+	background-color: white;
+}
+
+#average {
+	margin: 14px 0 0 0px;
+}
+
+#saved {
+	background-color: white;
+	margin-top: 14px;
+	font-weight: bold;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+	color: hotpink;
+	font-size: 30px;
+	padding-top: 0;
+	text-align: center;
+}
+
+.App-header {
+	/*	background-image: url('./nytimes-headquarters.jpg');*/
+	height: 360px;
+	border-bottom: solid lightyellow;
+	border-bottom-width: 14px;
+	text-align: left;
+	padding-bottom: 8px;
+}
