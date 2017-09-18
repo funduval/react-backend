@@ -174,7 +174,13 @@ class Main extends Component {
               handleFormSubmit={this.handleFormSubmit}
             />
           </div>
-          <div className="col-md-4" id="savedWell">
+          <div
+            className="col-md-4"
+            id="savedWell"
+            style={{
+              marginTop: this.state.showResults ? '-70px' : '-10px'
+            }}
+          >
             <Saved
               value={this.state.value}
               handleInputChange={this.handleInputChange}
