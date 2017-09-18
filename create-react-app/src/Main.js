@@ -58,8 +58,14 @@ class Main extends Component {
     //validation checks inside the event istener
     if (this.state.item === '') {
       alert('No food item was entered');
+      this.setState({
+        showResults: false
+      });
       this.searchFood();
     } else {
+      this.setState({
+        showResults: true
+      });
       this.searchFood();
       alert(`Searching food item: ${this.state.item}`);
     }
@@ -72,7 +78,7 @@ class Main extends Component {
       weekly: [],
       results: [],
       log: false,
-      showResults: true
+      showResults: false
     });
   };
 
@@ -88,7 +94,8 @@ class Main extends Component {
       brand: [],
       weekly: [],
       results: [],
-      log: true
+      log: true,
+      showResults: false
     });
   };
 
@@ -106,13 +113,20 @@ class Main extends Component {
           </div>
 
           <div className="col-md-6" id="average">
-            <Average results={this.state.results} />
+            <Average results={this.state.results} showResults={this.state.showResults} />
           </div>
         </div>
 
         <div className="row">
           <div className="col-md-4" id="resultWell">
-            <div className="panel" id="results">
+            <div
+              className="panel"
+              id="results"
+              style={{
+                marginTop: this.state.showResults ? '-135px' : '14px',
+                borderColor: this.state.showResults ? 'lightgrey' : 'transparent'
+              }}
+            >
               <div className="panel-body">
                 <Results
                   results={this.state.results}

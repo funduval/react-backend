@@ -4,7 +4,7 @@ import './Main.js';
 //connect all this to SUBMIT button/page
 
 const Results = ({ results, handleFormSubmit, showResults }) => (
-  <ul className="list-group search-results">
+  <ul className="list-group search-results" style={{ borderStyle: showResults ? 'solid' : 'none' }}>
     {results.map(result => {
       const { item_name, brand_name, nf_sugars } = result.fields;
 
