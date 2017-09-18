@@ -17,7 +17,6 @@ const Average = ({ results, handleFormSubmit }) => (
                         <h5> Total of{(nf_sugars * 35 / 7 - 25) * 365 * 4} pure sugar calories per year </h5>
                         <h5> Which, if that's above your daily caloric needs</h5>
                         <h5>
-                            {' '}
                             potentially amounts to {Math.floor((nf_sugars * 35 / 7 - 25) * 365 * 4 / 3500)} pounds per
                             year!
                         </h5>
