@@ -1,0 +1,75 @@
+body {
+	font-family: Times, Times New Roman;
+	font-size: 12px;
+	background-color: white;
+	color:  #000000;
+	background-color: #FFFFFF;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {margin: 0 auto; text-align:center; font-size:large;}
+
+fieldset {
+	border: solid 1px #aaaaaa;
+	padding: 5px;
+	margin: 10px;
+	font-size: 12px;
+	clear: none;
+	vertical-align: top;
+	width: 320px;
+	display: inline;
+}
+
+textarea { display: inline; clear: one;}
+
+table {margin: 0 auto;}
+
+table#type-and-title {width: 325px;}
+#preview-title-png h1 { color: #0000ff;}
+div#content {margin: 10px auto; width: 90%; }
+div#preview { float: right; width: 400px; margin: 10px;}
+div.preview  { margin: 20px auto;}
+textarea.preview { border: none; font-size: 12px; width:100%; height: 56px;}
+textarea#data-set {padding: 5px; font-size: 12px; width: 310px; height: 128px;}
+span.label {color: #aaaaaa;font-size: large;}
+td.label {width: 5em; }
+td.preview {padding: 15px 0px 15px 0px;}
+div#axis-labels {width: 325px;}
+
+div#google-ads-top {
+	margin:  10px auto;
+	padding: 10px 0px;
+	width: 770px;
+	clear: both;
+}
+
+#footer {
+	width: 100%;
+	clear: both;
+	font-style: italic;
+	text-align: center;
+	font-size: 12px;
+}
+
+td.form-label {
+	text-align:  right;
+	padding: 5px;
+}
+
+
+div#header{width:100%;overflow:hidden;background: #003366; color: #FFFFFF; margin: 0; padding: 0;}
+div#header h1,div#menu,p#site-moto{margin:0 30px 0 30px;text-align:left;}
+div#header h1{padding: 10px;color: #FFFFFF; background: #003366;font-size: x-large;}
+#motto {font-style:italic;font-size: 75%; padding-left:20px;}
+
+ul#nav,ul#nav li{list-style-type:none;margin:0;padding:0}
+ul#nav{float:right;font-size: 80%}
+ul#nav li{float:left;margin-left: 3px;text-align: center}
+ul#nav a{float:left; width: 7em; padding: 5px 0;background: #009900;text-decoration:none;color: white}
+ul#nav a:hover{background: #CDFFA1;color: #006A35}
+body#about a#aboutnav, 
+body#form a#formnav,
+body#examples a#examplesnav, 
+body#feedback a#feedbacknav
+{background: #CDFFA1;color: #006A35}

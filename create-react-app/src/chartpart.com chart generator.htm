@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0021)http://chartpart.com/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!-- Meta Tags -->
+	
+	<title>chartpart.com chart generator</title>
+	<link href="./chartpart.com chart generator_files/reset-min.css" media="screen" rel="Stylesheet" type="text/css">
+	<link href="./chartpart.com chart generator_files/chartpart.css" media="screen" rel="Stylesheet" type="text/css">
+	<script type="text/javascript" src="./chartpart.com chart generator_files/prototype.js"></script>
+	<script type="text/javascript" src="./chartpart.com chart generator_files/chartpart.js"></script>
+</head>
+<body>
+	<div id="header"><h1>CHARTPART <span id="motto">Google Chart API and Chart Generator Tool</span></h1>
+	</div>
+	<div id="content">
+		<div id="preview" style="width: 430px;">
+			<div id="preview-png">
+				<div id="live-preview-png"><a href="./chartpart.com chart generator_files/chart"><img src="./chartpart.com chart generator_files/chart"></a></div>
+			</div>
+			<div id="preview-url" class="preview">
+				<table width="100%" class="preview"><tbody><tr><td class="label">
+				<span class="label">Link</span></td><td class="preview">
+				<span id="live-preview-url"><form action="http://chartpart.com/">
+					<textarea id="textarea-url" class="preview" readonly="" name="preview"></textarea>
+				</form></span>
+				</td></tr><tr><td class="label">
+				<span class="label">HTML</span></td><td class="preview">
+				<span id="live-preview-html"><form action="http://chartpart.com/">
+					<textarea id="textarea-html" class="preview" readonly="" name="preview"></textarea>
+				</form></span>
+				</td></tr></tbody></table>
+			</div>
+		</div>
+		<form action="http://chartpart.com/" id="chart-form" method="get">
+			<fieldset>
+				<legend>Type and Title</legend>
+				<table id="type-and-title">
+					<tbody><tr>
+						<td class="form-label">Type</td><td>
+							<select name="cht" id="cht">
+								<option value="p">pie</option>
+								<option value="p3" selected="selected">3d pie</option>
+								<option value="lc">line</option>
+								<option value="bvs">stacked bar</option>
+								<option value="bhs">side stacked bar</option>
+								<option value="bvg">grouped bar</option>
+								<option value="bhg">side grouped bar</option>
+								<option value="s">scatter plot</option>
+								<option value="v">venn diagram</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="form-label">Size</td><td><input id="chs" maxlength="16" name="chs" size="24" type="text" value="480x256">
+						</td>
+					</tr>
+					<tr>
+						<td class="form-label">Title</td><td><input id="chtt" maxlength="256" name="chtt" size="24" type="text" value="Live Preview">
+						</td>
+					</tr>
+				</tbody></table>
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend>Data</legend>
+					<textarea name="data-set" id="data-set">jan,feb,mar,apr,may,jun
+sales,7,10,9,12,15,22,#ff0000
+visits,64,120,130,170,175,180,#0000ff</textarea>
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend>Extra Axis Labels</legend>
+					<div id="axis-labels">
+						<select name="axis-type" class="axis-type">
+							<option value="" selected="selected">Unused</option>
+							<option value="x">Bottom</option>
+							<option value="t">Top</option>
+							<option value="y">Left</option>
+							<option value="r">Right</option>
+						</select> 
+						<input maxlength="48" name="axis-label" size="24" type="text" value="">
+						<br>
+						<select name="axis-type" class="axis-type">
+							<option value="" selected="selected">Unused</option>
+							<option value="x">Bottom</option>
+							<option value="t">Top</option>
+							<option value="y">Left</option>
+							<option value="r">Right</option>
+						</select> 
+						<input maxlength="48" name="axis-label" size="24" type="text" value="">
+					</div>	
+			</fieldset>
+		</form>
+	</div>
+	<div id="ad" style="width:625px; margin: 20px auto; clear:both; border: 1px solid">
+<div style="width: 150px; float: left; padding: 10px"><a href="http://www.amazon.com/gp/redirect.html?ie=UTF8&amp;location=http%3A%2F%2Fwww.amazon.com%2FPlugable-Universal-Docking-DisplayLink-Ethernet%2Fdp%2FB002PONXAI%3Fie%3DUTF8%26m%3DA3HIHADV23VGU1%26s%3Dgeneric%26qid%3D1265871483%26sr%3D1-1&amp;tag=plugabltechno-20&amp;linkCode=ur2&amp;camp=1789&amp;creative=9325" target="_blank"><img src="./chartpart.com chart generator_files/plugable-ud-160-a1.png" alt="" title="plugable-ud-160-a" width="150" height="150" class="aligncenter size-full wp-image-41"></a>
+		</div>
+		<div style="margin:0 auto; padding: 20px; font-size:150%;">
+<a href="http://plugable.com/"><img src="./chartpart.com chart generator_files/logo2.png"></a><br>Expand your laptop with one simple USB cable</div>
+	</div>
+	<div id="footer">
+		<p>See <a href="http://leancode.com/category/projects/chartpart/">Leancode</a> for help and feedback on this service, and see <a href="http://code.google.com/apis/chart/">Google's Chart API</a> for what's possible.</p>
+		<div style="margin: 10px auto; width:512px">
+			<div style="float:left">
+			<a href="http://validator.w3.org/check?uri=referer"><img style="border:0;width:88px;height:31px" src="./chartpart.com chart generator_files/valid-xhtml10.png" alt="Valid XHTML 1.0 Strict"></a>
+			<a href="http://jigsaw.w3.org/css-validator">
+			<img style="border:0;width:88px;height:31px" src="./chartpart.com chart generator_files/vcss.png" alt="Valid CSS!">
+			</a>
+			</div>
+			<div style="float:left"><script src="http://images.del.icio.us/static/js/blogbadge.js" type="text/javascript"></script></div>
+			<div style="float:left"><script src="./chartpart.com chart generator_files/diggthis.js" type="text/javascript"></script></div>
+		</div>
+	<script src="./chartpart.com chart generator_files/urchin.js" type="text/javascript"></script>
+	<script type="text/javascript">_uacct = "UA-99119-4"; urchinTracker();</script>
+	</div>
+
+
+</body></html>

@@ -4,6 +4,7 @@ import Form from './Form.js';
 import Results from './Results.js';
 import Saved from './Saved.js';
 import Average from './Average.js';
+import Chart from './Chart.js';
 import API from './API.js';
 
 class Main extends Component {
@@ -58,15 +59,29 @@ class Main extends Component {
     //validation checks inside the event istener
     if (this.state.item === '') {
       alert('No food item was entered');
+      this.searchFood();
       this.setState({
+        food: [],
+        sugar: [],
+        item: '',
+        brand: [],
+        weekly: [],
+        results: [],
+        log: false,
         showResults: false
       });
-      this.searchFood();
     } else {
       this.setState({
+        food: [],
+        sugar: [],
+        item: '',
+        brand: [],
+        weekly: [],
+        results: [],
+        log: false,
         showResults: true
       });
-      this.searchFood();
+      this.searchFood('sugar');
       alert(`Searching food item: ${this.state.item}`);
     }
 
@@ -78,26 +93,26 @@ class Main extends Component {
       weekly: [],
       results: [],
       log: false,
-      showResults: false
+      showResults: true
     });
   };
 
-  handleLog = event => {
-    event.preventDefault();
+  // handleLog = event => {
+  //   event.preventDefault();
 
-    this.logFood();
+  //   this.logFood();
 
-    this.setState({
-      food: [],
-      sugar: [],
-      item: '',
-      brand: [],
-      weekly: [],
-      results: [],
-      log: true,
-      showResults: false
-    });
-  };
+  //   this.setState({
+  //     food: [],
+  //     sugar: [],
+  //     item: '',
+  //     brand: [],
+  //     weekly: [],
+  //     results: [],
+  //     log: true,
+  //     showResults: false
+  //   });
+  // };
 
   render() {
     return (
@@ -112,8 +127,11 @@ class Main extends Component {
             />
           </div>
 
-          <div className="col-md-6" id="average">
+          <div className="col-md-4" id="average">
             <Average results={this.state.results} showResults={this.state.showResults} />
+          </div>
+          <div className="col-md-4" id="charts">
+            <Chart results={this.state.results} showResults={this.state.showResults} />
           </div>
         </div>
 
@@ -137,7 +155,7 @@ class Main extends Component {
             </div>
           </div>
 
-          <div className="col-md-6" id="resultWell">
+          <div className="col-md-4" id="savedWell">
             <Saved
               value={this.state.value}
               handleInputChange={this.handleInputChange}

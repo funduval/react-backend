@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import logo from './sugar-evil.jpg';
 import './App.css';
 import Main from './Main.js';
 
 class App extends Component {
-  state = { users: [], showUsers: false };
+  state = { users: [], showUsers: true };
 
   componentDidMount() {
     fetch('/users')
@@ -15,13 +14,20 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
           <h2 id="titleBar">Sugr Trackr</h2>
         </div>
         <div className="App-intro">
           <panel id="userDiv" style={{ display: this.state.showUsers ? 'block' : 'none' }}>
-            <h1>Users</h1>
-            {this.state.users.map(user => <div key={user.id}>{user.username}</div>)}
+            <ul id="userList">
+              <h3 id="userTag">Users:</h3>
+              {this.state.users.map(user => (
+                <li className="userItems" key={user.id}>
+                  {'\n\n'}
+                  {user.username}
+                  {'\n\n'}
+                </li>
+              ))}
+            </ul>
           </panel>
           <Main />
         </div>
