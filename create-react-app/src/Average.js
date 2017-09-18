@@ -16,11 +16,11 @@ const Average = ({ results, handleFormSubmit, showResults }) => (
                         data-value={nf_sugars}
                         style={{ display: showResults ? 'block' : 'none' }}
                     >
-                        {nf_sugars * 35 / 7} <h5> sugar grams consumed per day</h5>
-                        {Math.floor(nf_sugars * 35 / 7 - 25)} <h5> grams more than the daily allowance</h5>
-                        <h5> Total of{(nf_sugars * 35 / 7 - 25) * 365 * 4} pure sugar calories per year </h5>
-                        <h5> Which, if that's above your daily caloric needs</h5>
+                        <h5>{nf_sugars * 35 / 7} Sugar grams consumed per day </h5>
+                        <h5>{Math.floor(nf_sugars * 35 / 7 - 25)} Grams more than the daily allowance </h5>
+                        <h5>Total of {(nf_sugars * 35 / 7 - 25) * 365 * 4} pure sugar calories per year,</h5>
                         <h5>
+                            Which, if that's above your daily caloric needs,{'\n'}
                             potentially amounts to {Math.floor((nf_sugars * 35 / 7 - 25) * 365 * 4 / 3500)} pounds per
                             year!
                         </h5>

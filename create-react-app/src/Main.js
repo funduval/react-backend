@@ -5,6 +5,7 @@ import Results from './Results.js';
 import Saved from './Saved.js';
 import Average from './Average.js';
 import Chart from './Chart.js';
+import Graph from './Graph.js';
 import API from './API.js';
 
 class Main extends Component {
@@ -128,7 +129,11 @@ class Main extends Component {
           </div>
 
           <div className="col-md-4" id="average">
-            <Average results={this.state.results} showResults={this.state.showResults} />
+            <Average
+              results={this.state.results}
+              showResults={this.state.showResults}
+              handleFormSubmit={this.handleFormSubmit}
+            />
           </div>
           <div className="col-md-4" id="charts">
             <Chart results={this.state.results} showResults={this.state.showResults} />
@@ -154,7 +159,19 @@ class Main extends Component {
               </div>
             </div>
           </div>
-
+          <div
+            className="col-md-4"
+            id="graphWell"
+            style={{
+              marginTop: this.state.showResults ? '4px' : '-200px'
+            }}
+          >
+            <Graph
+              results={this.state.results}
+              showResults={this.state.showResults}
+              handleFormSubmit={this.handleFormSubmit}
+            />
+          </div>
           <div className="col-md-4" id="savedWell">
             <Saved
               value={this.state.value}

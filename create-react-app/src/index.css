@@ -52,7 +52,7 @@ body {
 #resultWell {
 	margin-top: 15px;
 	text-align: left;
-	margin-left: 4px;
+	margin-left: 0px;
 }
 
 ul {
@@ -131,6 +131,9 @@ h3 {
 	font-size: 30px;
 	padding-top: 0;
 	text-align: center;
+}
+#savedWell {
+	margin-left: 0px;
 }
 
 .App-header {
