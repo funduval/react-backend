@@ -6,9 +6,9 @@ import './Main.js';
 class Chart extends Component {
 	render() {
 		return (
-			<div className="well">
+			<div>
 				<img
-					src="http://chart.apis.google.com/chart?chs=400x300&amp;cht=bvg&amp;chtt=Live Preview&amp;chd=s:OUSYft,cU9UYf&amp;chco=ff69b4,98fb98&amp;chdl=sgr|prt&amp;chxl=0:|jan|feb|mar|apr|may|jun|&amp;chxt=x"
+					src="http://chart.apis.google.com/chart?chs=300x200&amp;cht=bvg&amp;chtt=Live Preview&amp;chd=s:OUSYft,cU9UYf&amp;chco=ff69b4,98fb98&amp;chdl=sgr|prt&amp;chxl=0:|jan|feb|mar|apr|may|jun|&amp;chxt=x"
 					alt="chart"
 				/>
 			</div>

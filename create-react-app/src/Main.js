@@ -147,7 +147,7 @@ class Main extends Component {
               className="panel"
               id="results"
               style={{
-                marginTop: this.state.showResults ? '-135px' : '14px',
+                marginTop: this.state.showResults ? '-45px' : '-10px',
                 borderColor: this.state.showResults ? 'lightgrey' : 'transparent'
               }}
             >
@@ -165,7 +165,7 @@ class Main extends Component {
             className="col-md-4"
             id="graphWell"
             style={{
-              marginTop: this.state.showResults ? '4px' : '-200px'
+              marginTop: this.state.showResults ? '4px' : '-80px'
             }}
           >
             <Graph
