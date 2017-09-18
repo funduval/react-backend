@@ -98,22 +98,23 @@ class Main extends Component {
     });
   };
 
-  // handleLog = event => {
-  //   event.preventDefault();
+  handleLog = event => {
+    alert('food has been logged');
+    event.preventDefault();
+    //logFood may have to be on results page/////////////////////
+    this.logFood();
 
-  //   this.logFood();
-
-  //   this.setState({
-  //     food: [],
-  //     sugar: [],
-  //     item: '',
-  //     brand: [],
-  //     weekly: [],
-  //     results: [],
-  //     log: true,
-  //     showResults: false
-  //   });
-  // };
+    this.setState({
+      food: [],
+      sugar: [],
+      item: '',
+      brand: [],
+      weekly: [],
+      results: [],
+      log: true,
+      showResults: false
+    });
+  };
 
   render() {
     return (
@@ -155,6 +156,7 @@ class Main extends Component {
                   results={this.state.results}
                   showResults={this.state.showResults}
                   handleFormSubmit={this.handleFormSubmit}
+                  handleLog={this.handleLog}
                 />
               </div>
             </div>
@@ -176,7 +178,6 @@ class Main extends Component {
             <Saved
               value={this.state.value}
               handleInputChange={this.handleInputChange}
-              handleLog={this.handleLog}
               postResponse={this.postResponse}
             />
           </div>
