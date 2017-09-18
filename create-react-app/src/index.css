@@ -35,18 +35,15 @@ body {
 	-webkit-text-stroke-color: black;
 }
 
-#log {
+#logger {
 	height: 35px;
 	width: 35px;
 	text-align: center;
 	background-color: plum;
 	float: right;
-	padding-left: 6px;
-	padding-top: 2px;
+	padding-left: 4px;
+	padding-top: 1px;
 	display: inline;
-	font-weight: bold;
-	-webkit-text-stroke-width: 1px;
-	-webkit-text-stroke-color: black;
 }
 
 #resultWell {

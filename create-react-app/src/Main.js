@@ -37,11 +37,6 @@ class Main extends Component {
       .catch(err => console.log(err));
   };
 
-  logFood = () => {
-    //=======call post route to Mongo==========//
-    API.log();
-  };
-
   handleInputChange = event => {
     // Getting the value and name of the input which triggered the change
     let value = event.target.value;
@@ -95,24 +90,6 @@ class Main extends Component {
       results: [],
       log: false,
       showResults: true
-    });
-  };
-
-  handleLog = event => {
-    alert('food has been logged');
-    event.preventDefault();
-    //logFood may have to be on results page/////////////////////
-    this.logFood();
-
-    this.setState({
-      food: [],
-      sugar: [],
-      item: '',
-      brand: [],
-      weekly: [],
-      results: [],
-      log: true,
-      showResults: false
     });
   };
 

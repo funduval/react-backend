@@ -13,11 +13,11 @@ export default {
 			return results;
 		});
 	},
-	postSaved: function(food, sugar) {
-		var newFood = { item: food, sugar: sugar };
+	postSaved: function(item_name, brand_name, nf_sugars) {
+		var newFood = { item: item_name, brand: brand_name, sugar: nf_sugars };
 		return axios.post('/api/saved', newFood).then(function(response) {
-			console.log('axios results food', response.data._id);
-			return response.data._id;
+			console.log('axios results food', response.data);
+			return response.data;
 		});
 	}
 };

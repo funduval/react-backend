@@ -7,13 +7,12 @@ var FoodSchema = new Schema({
 		type: String
 	},
 
+	brand: {
+		type: String
+	},
+
 	sugar: {
 		type: Number
-	}
-
-	date: {
-		
-		type:Date
 	}
 });
 
