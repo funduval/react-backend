@@ -7,6 +7,7 @@ import Average from './Average.js';
 import Chart from './Chart.js';
 import Graph from './Graph.js';
 import API from './API.js';
+import { Modal } from 'react-bootstrap';
 
 class Main extends Component {
   state = {
@@ -96,6 +97,7 @@ class Main extends Component {
   render() {
     return (
       <div className="container">
+        <Modal />
         <div className="row">
           <div className="col-md-4" id="form">
             <Form
@@ -124,7 +126,7 @@ class Main extends Component {
               className="panel"
               id="results"
               style={{
-                marginTop: this.state.showResults ? '-45px' : '-10px',
+                marginTop: this.state.showResults ? '-65px' : '-10px',
                 borderColor: this.state.showResults ? 'lightgrey' : 'transparent'
               }}
             >

@@ -14,7 +14,6 @@ const Results = ({ results, handleFormSubmit, showResults, handleLog }) => (
       const { item_name, brand_name, nf_sugars } = result.fields;
 
       handleLog = event => {
-        //logFood may have to be on results page/////////////////////
         event.preventDefault();
         API.postSaved(item_name, brand_name, nf_sugars);
         alert('logged item ' + item_name + ' ' + brand_name + ' ' + nf_sugars + ' grams');
